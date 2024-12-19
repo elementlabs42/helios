@@ -129,7 +129,7 @@ impl<N: NetworkSpec> ExecutionRpc<N> for HttpRpc<N> {
 
         let receipts = self
             .provider
-            .get_block_receipts(block)
+            .get_block_receipts(BlockId::from(block))
             .await
             .map_err(|e| RpcError::new("get_block_receipts", e))?;
 

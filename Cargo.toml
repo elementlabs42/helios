@@ -26,8 +26,8 @@ default-members = ["cli"]
 ssz_types = "0.9.0"
 ethereum_ssz_derive = { git = "https://github.com/elementlabs42/ethereum_ssz", rev = "014b2f1b3b44ad4b2b8ba8e0faf4bf93a1aafc05" }
 ethereum_ssz = { git = "https://github.com/elementlabs42/ethereum_ssz", rev = "014b2f1b3b44ad4b2b8ba8e0faf4bf93a1aafc05" }
-tree_hash_derive = "0.8.0"
-tree_hash = "0.8.0"
+tree_hash_derive = { git = "https://github.com/macladson/tree_hash", rev = "51b88a82f67a561ce24b15eeae08167699ccaf95" }
+tree_hash = { git = "https://github.com/macladson/tree_hash", rev = "51b88a82f67a561ce24b15eeae08167699ccaf95" }
 sha2 = "0.9"
 bls12_381 = { version = "0.8.0", features = ["experimental"] }
 

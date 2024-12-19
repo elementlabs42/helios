@@ -4,6 +4,7 @@ use ssz_types::{
     serde_utils::{hex_fixed_vec, hex_var_list},
     FixedVector, VariableList,
 };
+use tree_hash::TreeHash;
 use tree_hash_derive::TreeHash;
 
 #[derive(Debug, Clone, Default, Encode, Decode, TreeHash, PartialEq)]

@@ -3081,7 +3081,7 @@ dependencies = [
  "thiserror 1.0.65",
  "tokio",
  "tracing",
- "tree_hash",
+ "tree_hash 0.8.0 (git+https://github.com/macladson/tree_hash?rev=51b88a82f67a561ce24b15eeae08167699ccaf95)",
  "tree_hash_derive",
  "typenum",
  "wasmtimer 0.2.0",
@@ -3141,7 +3141,7 @@ dependencies = [
  "thiserror 1.0.65",
  "tokio",
  "tracing",
- "tree_hash",
+ "tree_hash 0.8.0 (git+https://github.com/macladson/tree_hash?rev=51b88a82f67a561ce24b15eeae08167699ccaf95)",
  "triehash-ethereum",
  "typenum",
  "wasm-bindgen-futures",
@@ -6656,7 +6656,7 @@ dependencies = [
  "serde",
  "serde_derive",
  "smallvec",
- "tree_hash",
+ "tree_hash 0.8.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "typenum",
 ]
 
@@ -7272,10 +7272,21 @@ dependencies = [
 ]
 
 [[package]]
+name = "tree_hash"
+version = "0.8.0"
+source = "git+https://github.com/macladson/tree_hash?rev=51b88a82f67a561ce24b15eeae08167699ccaf95#51b88a82f67a561ce24b15eeae08167699ccaf95"
+dependencies = [
+ "alloy-primitives",
+ "ethereum_hashing",
+ "ethereum_ssz",
+ "smallvec",
+ "typenum",
+]
+
+[[package]]
 name = "tree_hash_derive"
 version = "0.8.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b0857056ca4eb5de8c417309be42bcff6017b47e86fbaddde609b4633f66061e"
+source = "git+https://github.com/macladson/tree_hash?rev=51b88a82f67a561ce24b15eeae08167699ccaf95#51b88a82f67a561ce24b15eeae08167699ccaf95"
 dependencies = [
  "darling 0.20.10",
  "proc-macro2",
